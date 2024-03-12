@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Schwendiman Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/reset.css">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <header>
+        <h1>Ben Schwendiman</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>   
+    </header>
+    <div class="aboutme" id="about">
+        <figure >
+            <!-- placeholder image until a professional headshot can be aquired -->
+            <img id="headshot" src="./assets/images/headShot.png" alt="ben schwendiman headshot">
+        </figure>
+        <figcaption>
+            <section>
+                <h2>About Me</h2>
+                <p>
+                    Hi there! I'm Ben Schwendiman, a passionate creator based in Utah. I thrive on creativity and am dedicated to God and my family.
+                </p>
+                <p>
+                    With a background in entrepreneurship, I've accumulated valuable experience in owning and operating small businesses. I enjoy research and development and am always eager to explore new challenges.
+                </p>
+                <p>
+                    My professional journey has taken me through owning a variety of small businesses from a home brew soda company to a blacksmithing school. Each experience has contributed to my growth and shaped my approach to life.
+                </p>
+            </section>
+        </figcaption>
+    </div>
+    <main id="work">
+        <figure class="card" id="fullWidthCard">
+            <a href="https://www.google.com/" target="_blank"><img src="./assets/images/googleScreenshot.png" alt="google homepage" class="projectImage"></a>
+            <figcaption>
+                <h2>Google</h2>
+                <p>HTML, CSS</p>
+            </figcaption>
+        </figure>
+        <!-- div .flex contains the second two projects and keeps them below the main project -->
+        <div class="flex">
+        <figure class="card otherCards">
+            <a href="https://www.audible.com/" target="_blank"><img src="./assets/images/audibleScreenshot.png" alt="audible homepage" class="projectImage"></a>
+            <figcaption>
+                <h2>Audible</h2>
+                <p>Node, EJS</p>
+            </figcaption>
+        </figure>
+        <figure class="card otherCards">
+            <a href="https://www.macu.com/" target="_blank"><img src="./assets/images/mountainAmericaScreenshot.png" alt="mountain america credit union homepage" class="projectImage"></a>
+            <figcaption>
+                <h2>MACU</h2>
+                <p>Javascript</p>
+            </figcaption>
+        </figure>
+    </div>
+    </main>
+    <div>
+        <form id="contact">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <textarea id="message" placeholder="Type your message here" rows="4" required></textarea>
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+    <footer>
+        <h2>&copy 2024 Ben Schwendiman</h2>
+    </footer>
+    
+</body>
+</html>
